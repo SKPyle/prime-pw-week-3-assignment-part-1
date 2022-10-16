@@ -28,18 +28,22 @@ console.log('Number of foods', faveFoods.length);
 console.log('--- 3. Accessing items in an array ---');
 
 // Example: Log the first animal from the array using it's array index
-console.log('First animal is', animalArray[0])
+console.log('First animal is', animalArray[0]);
 
 // 3.a. TODO: Log the second animal in the array 
 
+console.log('The second animal is', animalArray[1]);
+
 
 // 3.b. TODO: Log the last animal in the array using it's array index 
+console.log('the last animal is', animalArray[3]);
 
 
 // 3.c. (STRETCH) TODO: Log the last animal by using the array length, 
 //      instead of the exact index number of the last item
 
-
+let lastElement = animalArray[animalArray.length - 1];
+console.log('The last item in this array is', lastElement);
 
 // 4. Adding & Removing Array Items
 console.log('--- 4. Adding and removing array items ---');
@@ -88,12 +92,14 @@ console.log('updated favorite foods', faveFoods);
 // 4.e (STRETCH) TODO: Replace the second food in your array
 //      with another one of your favorite foods.
 //      Then log the updated array.
-faveFoods.splice(1);
+faveFoods[1] = 'peanuts'
 faveFoods.push('peanuts', 'candy');
 console.log('Changed second food', faveFoods);
 
+
 // 4.f (STRETCH) TODO: Sort your favoriteFoods array
 //     in reverse alphabetical order. Log the array.
+faveFoods.sort();
 let reverseFoods = faveFoods.reverse();
 console.log(reverseFoods);
 // 4.g (STRETCH) TODO: Convert your array to a string
